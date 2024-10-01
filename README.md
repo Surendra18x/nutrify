@@ -8,13 +8,14 @@ Search by Product Name: Users can search for products by their name.
 Category Filtering: Filter products by selecting from available food categories.
 Barcode Lookup: Find detailed information about products by scanning or entering the barcode.
 Responsive Design: The application is fully responsive and user-friendly across different devices.
-Technologies Used
+
+## Technologies Used
 React.js: For building user interfaces.
 OpenFoodFacts API: For fetching product data, categories, and barcode lookup.
 Vite: Development build tool for fast front-end development.
-Project Structure
-bash
-Copy code
+
+## Project Structure
+``` bash
 src/
 │
 ├── assets/                    # Contains images and logos
@@ -22,7 +23,7 @@ src/
 ├── services/                   # API handling (OpenFoodFactsAPI.jsx)
 ├── App.jsx                     # Main entry point
 └── AppRouter.jsx               # contains routes like Home,ProductDetail
-
+```
 ## Installation & Setup
 Prerequisites
 Ensure you have the following installed on your machine:
@@ -83,4 +84,4 @@ If you would like to contribute to the project, follow these steps:
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
-For any inquiries or issues, feel free to reach out via [(vermasurendra074@gmail.com)]
+For any inquiries or issues, feel free to reach out via vermasurendra074@gmail.com
