@@ -21,16 +21,16 @@ const SearchBar = ({
   };
 
   return (
-    <div className="search-container">
+    <div className="flex justify-center items-center gap-2.5">
       <input
         type="text"
         placeholder={placeholder}
         value={text}
         onChange={handleChange}
         onKeyDown={onKeyPress}
-        className="input-field"
+        className="w-full p-1 sm:p-4 md:p-3 border border-[#ccc] rounded-md text-base transition-colors duration-300 focus:border-[#007bff] focus:outline-none"
       />
-      <button className="search-btn" onClick={onSubmit}>
+      <button className="bg-[#007bff] max-w-[90px] text-white p-3 px-5 border-none rounded-md cursor-pointer text-base transition-colors duration-300 hover:bg-[#0056b3] sm:max-w-[120px] md:max-w-[150px] lg:max-w-[180px]" onClick={onSubmit}>
         {buttonText}
       </button>
     </div>

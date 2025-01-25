@@ -23,18 +23,18 @@ export const Home = () => {
 
   return (
     <>
-      <div className="header-list-wrapper">
-        <header className="header">
-          <div className="header-text-container">
-            <h1 className="main-text">
-              Nutri<span>Fy</span>
+      <div className="min-h-screen">
+        <header className="flex justify-between gap-8 px-32 py-16 bg-[url('https://static.vecteezy.com/system/resources/previews/047/022/332/non_2x/fresh-ingredients-arranged-around-black-wooden-surface-free-photo.jpeg')] bg-center mb-5">
+          <div className="flex flex-col gap-4">
+            <h1 className="m-0 text-[90px] text-white">
+              Nutri<span className="text-[#28a745]">Fy</span>
             </h1>
-            <p className="description">Know what you are eating...</p>
-            <p className="description-qoute">“The doctor of the future will no longer treat <br/>the human frame with drugs, but rather will cure <br/> and prevent disease with nutrition.”<br/>
-            <span>– Thomas Edison</span> </p>
+            <p className="text-[#DADADA] text-xl mt-0">Know what you are eating...</p>
+            <p className="text-white text-lg font-bold mt-0 font-[Orienta,sans-serif]">“The doctor of the future will no longer treat <br/>the human frame with drugs, but rather will cure <br/> and prevent disease with nutrition.”<br/>
+            <span className="text-[#99c7f8] font-medium font-[Orienta,sans-serif]">– Thomas Edison</span> </p>
           </div>
           <div>
-            <div className="search-wrapper">
+            <div className="flex flex-col gap-4 w-[40vh]">
               <SearchBar
                 text={input}
                 setText={setInput}
@@ -56,16 +56,18 @@ export const Home = () => {
             </div>
           </div>
         </header>
+        <div>
         <ProductList
           products={products}
           isLoading={isLoading}
           setPage={setPage}
           hasMore={hasMore}
         />
+        </div>
       </div>
 
-      <footer>
-        <div className="footer-div">
+      <footer className="flex flex-col justify-center text-white p-6 w-full bg-[#87CEFA]">
+        <div className="flex justify-center items-center">
           A collaborative, free and open database of food products from around
           the world.
         </div>

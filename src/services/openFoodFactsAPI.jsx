@@ -33,6 +33,7 @@ const useProductList = () => {
     const data = await response.json();
     setProducts(data.products);
     setIsLoading(false);
+    setInput("")
   };
 
   const searchByBarcode = async (barcode) => {
@@ -43,6 +44,7 @@ const useProductList = () => {
     const data = await response.json();
     setProducts([data.product]);
     setIsLoading(false);
+    setBarcode("")
   };
 
   const fetchProductDetailByBarcode = async (barcode) => {
